@@ -1,12 +1,13 @@
-title = "My cool new Blog"
-baseURL = "https://example.com/"
+
+title = "Fabio Silva"
+baseURL = "https://faabio.com/notes"
 theme = "bilberry-custom"
 
 # Generate the robots.txt file for SEO
 enableRobotsTXT = true
 
 # Change to one of your content languages defined at the end.
-DefaultContentLanguage = "en"
+DefaultContentLanguage = "pt-br"
 
 # Enable / Disable Google Analytics statistics for your site
 googleAnalytics = ""
@@ -15,6 +16,7 @@ googleAnalytics = ""
 disqusShortname = ""
 
 [params]
+  ganalytics = "G-82CDPFSJZ9"
   # Custom CSS / JS modules that will be imported by the template.
   # Files are relative to the static/ directory or a URL.
   # Files are imported in the order they appear here, after
@@ -23,12 +25,12 @@ disqusShortname = ""
   js_modules = []
 
   # Description and meta data for the search engines
-  author = "Lednerb"
-  description = "Bilberry Premium Theme for Hugo."
+  author = "Fabio"
+  description = ""
   keywords = "blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts"
 
   # How many articles should be displayed at once?
-  paginate = 7
+  paginate = 3
 
   # Enable / Disable MathJax
   enable_mathjax    = false
@@ -68,105 +70,107 @@ disqusShortname = ""
   utterancesCrossOrigin = "anonymous"
 
   # Media configuration
-    # let hugo automatically resize and crop your images to the correct sizes
-    # NB: When enabled the image files get renamed by adding additional information,
-    #     even if the image has the correct sizes.
-    resizeImages = true
+  # let hugo automatically resize and crop your images to the correct sizes
+  # NB: When enabled the image files get renamed by adding additional information,
+  #     even if the image has the correct sizes.
+  resizeImages = true
 
   # Header configuration
-    # your subtitle if you want to use any
-    subtitle = "Hello World! This is the most epic subtitle ever."
+  customLandingImage = "images/20220117_050927.jpg"
+  # your subtitle if you want to use any
+  subtitle = "Hello World! This is the most epic subtitle ever."
 
-    # if you want to use libravatar or gravatar for the header image
-    avatarEmail = "code@lednerb.de"
+  # if you want to use libravatar or gravatar for the header image
+  avatarEmail = "blevisky"
 
-    # set an path to the image file you want to use | overwrites avatar by email
-    customImage = ""
+  # set an path to the image file you want to use | overwrites avatar by email
+  customImage = "images/20211211_220129.jpg"
 
-    # define the icon you want to use for the overlay for the customImage or avatar.
-    overlayIcon = "fa-home"
+  # define the icon you want to use for the overlay for the customImage or avatar.
+  overlayIcon = "fa-home"
 
-    # always display the top navigation (with pages and search) on non-mobile screens
-    permanentTopNav = false
+  # always display the top navigation (with pages and search) on non-mobile screens
+  permanentTopNav = false
 
-    # always display the top navigation when scrolling
-    # works only with permanentTopNav = true
-    stickyNav = false
+  # always display the top navigation when scrolling
+  # works only with permanentTopNav = true
+  stickyNav = false
 
-    # show a language chooser in the header
-    showHeaderLanguageChooser = true
+  # show a language chooser in the header
+  showHeaderLanguageChooser = true
 
   # Content configuration
-    # Enable an optional pinned page to display at the top of the index
-    # pinnedPost = "/article/installing-bilberry-theme/"
-    # Set to true to pin only to the first page, false to all pages
-    # pinOnlyToFirstPage = true
+  # Enable an optional pinned page to display at the top of the index
+  # pinnedPost = "/article/installing-bilberry-theme/"
+  # Set to true to pin only to the first page, false to all pages
+  # pinOnlyToFirstPage = true
 
-    # enable automatic localization of the article's PublishedDate with momentjs
-    enableMomentJs = true
+  # enable automatic localization of the article's PublishedDate with momentjs
+  enableMomentJs = true
 
-    # customize the date format | only works if momentjs is disabled | only works with English month names
-    # you can customize it with the options you find here:
-    # https://gohugo.io/functions/format/#hugo-date-and-time-templating-reference
-    dateFormat = "2006-01-02"
+  # customize the date format | only works if momentjs is disabled | only works with English month names
+  # you can customize it with the options you find here:
+  # https://gohugo.io/functions/format/#hugo-date-and-time-templating-reference
+  dateFormat = "2006-01-02"
 
-    # display the estimated reading time for an article
-    showReadingTime = false
+  # display the estimated reading time for an article
+  showReadingTime = true
 
-    # Minimum word count to display the Table of Contents
-    tocMinWordCount = 400
+  # Minimum word count to display the Table of Contents
+  tocMinWordCount = 400
 
   # Footer configuration
-    showFooter = true
+  showFooter = true
 
-    # How many articles should be displayed at latest posts in the footer?
-    # Set to -1 to hide the 'Latest Posts' column
-    amountLatestPostsInFooter = 7
+  # How many articles should be displayed at latest posts in the footer?
+  # Set to -1 to hide the 'Latest Posts' column
+  amountLatestPostsInFooter = 3
 
-    # How many categories should be displayed in the footer section?
-    # Set to -1 to hide the 'Categories' column
-    amountCategoriesInFooter = 7
+  # How many categories should be displayed in the footer section?
+  # Set to -1 to hide the 'Categories' column
+  amountCategoriesInFooter = 3
 
-    # show a language chooser in the footer
-    showFooterLanguageChooser = true
+  # show a language chooser in the footer
+  showFooterLanguageChooser = false
 
-    # social media profile urls for the footer links
-    showSocialMedia = true
+  # social media profile urls for the footer links
+  showSocialMedia = true
 
-    # show an archive link in the footer
-    showArchive = false
+  # show an archive link in the footer
+  showArchive = false
 
-    # archive grouping: "2006" by year, "2006-01" by month
-    archiveDateGrouping = "2006-01"
+  # archive grouping: "2006" by year, "2006-01" by month
+  archiveDateGrouping = "2006-01"
 
-    # define your links with FontAwesome 5 (only free icons are supported)
-    # all icons https://fontawesome.com/icons?d=gallery&m=free
-    # brand icons https://fontawesome.com/icons?d=gallery&s=brands&m=free
-    socialMediaLinks = [
-      { link = "https://twitter.com/TheRealLednerb", icon = "fab fa-twitter" },
-      { link = "https://github.com/Lednerb", icon = "fab fa-github" },
-    ]
+  # define your links with FontAwesome 5 (only free icons are supported)
+  # all icons https://fontawesome.com/icons?d=gallery&m=free
+  # brand icons https://fontawesome.com/icons?d=gallery&s=brands&m=free
+  socialMediaLinks = [
+      { link = "https://github.com/fbcnsilva", icon = "fab fa-github" },
+  ]
 
-    # credits line configuration
-    copyrightBy = "by Lednerb"
-    copyrightUseCurrentYear = true  # set to true to always display the current year in the copyright
-    copyrightYearOverride = "2017"
-    copyrightUrl = "https://github.com/Lednerb"
-    creditsText = "Bilberry Hugo Theme"
-    creditsUrl = "https://github.com/Lednerb/bilberry-hugo-theme"
+  # credits line configuration
+  copyrightBy = "Fabio Silva"
+  copyrightUseCurrentYear = true  # set to true to always display the current year in the copyright
+  copyrightYearOverride = "2017"
+  copyrightUrl = "https://github.com/fbcnsilva"
+  creditsText = ""
+  creditsUrl = ""
 
 
 # customize your available languages for your multi-lingual site
 # or delete the [Languages] blog to use the theme with only one supported language
 [Languages]
+  [Languages.pt-br]
+    languageName = "pt"
+    subtitle= "Programador PHP"
+    contentDir = "content/br"
+    weight = 1
   [Languages.en]
     languageName = "en"
-    weight = 1
-  [Languages.de]
-    languageName = "de"
+    subtitle = "PHP Developer"
+    contentDir = "content/en"
     weight = 2
-    title = "Mein cooler neuer Blog"
-    subtitle = "Hallo Welt! Dies ist der epischste Untertitel aller Zeiten."
 
 # don't change anything below
 [taxonomies]
