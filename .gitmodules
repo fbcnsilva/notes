@@ -1,0 +1,3 @@
+[submodule "themes/bilberry-custom"]
+	path = themes/bilberry-custom
+	url = https://github.com/fbcnsilva/bilberry-custom.git
